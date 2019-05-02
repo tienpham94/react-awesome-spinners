@@ -21,13 +21,13 @@ const RingSpinner = styled.div`
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 51px;
-  height: 51px;
+  width: ${p => `${p.size}${p.sizeUnit}`};
+  height: ${p => `${p.size}${p.sizeUnit}`};
   margin: 6px;
-  border: 6px solid #fff;
+  border: 6px solid ${p => p.color};
   border-radius: 50%;
   animation: ${p => motion(p)} 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+  border-color: ${p => p.color} transparent transparent transparent;
 
   :nth-child(1) {
     animation-delay: -0.45s;
@@ -40,10 +40,16 @@ const RingSpinner = styled.div`
   }
 `
 
-const Ring = props => (
+const Ring = ({ color, size, sizeUnit }) => (
   <Wrapper>
-    <RingSpinner />
+    <RingSpinner color={color} size={size} sizeUnit={sizeUnit} />
   </Wrapper>
 )
+
+Ring.defaultProps = {
+  size: 50,
+  color: '#00bfff',
+  sizeUnit: 'px'
+}
 
 export default Ring

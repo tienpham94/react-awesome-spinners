@@ -2,7 +2,9 @@
   "name": "react-awesome-spinners",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -17,7 +19,7 @@
     "react",
     "spinners"
   ],
-  "author": "",
+  "author": "Tien Pham",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tienpham94/react-awesome-spinners/issues"
