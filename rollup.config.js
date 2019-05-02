@@ -28,7 +28,7 @@ const outputs = [
 
 const common = {
   input: 'src/index.js',
-  external: ['react'],
+  external: ['react', 'styled-components'],
   plugins: [
     resolve(),
     babel({
