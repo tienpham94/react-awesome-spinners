@@ -1,5 +1,5 @@
 {
-  "name": "react-cool-spinners",
+  "name": "react-awesome-spinners",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tienpham94/react-cool-spinners.git"
+    "url": "git+https://github.com/tienpham94/react-awesome-spinners.git"
   },
   "keywords": [
     "react",
@@ -18,9 +18,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tienpham94/react-cool-spinners/issues"
+    "url": "https://github.com/tienpham94/react-awesome-spinners/issues"
   },
-  "homepage": "https://github.com/tienpham94/react-cool-spinners#readme",
+  "homepage": "https://github.com/tienpham94/react-awesome-spinners#readme",
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
