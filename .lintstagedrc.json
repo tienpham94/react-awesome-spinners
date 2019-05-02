@@ -2,6 +2,7 @@
   "linters": {
     "src/**/*.js": [
       "npm run format",
+      "npm run test:staged",
       "git add"
     ]
   }
