@@ -4,17 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "format": "prettier-standard 'src/**/*.js'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tienpham94/react-cool-spinners.git"
   },
-  "keywords": ["react", "spinners"],
+  "keywords": [
+    "react",
+    "spinners"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tienpham94/react-cool-spinners/issues"
   },
-  "homepage": "https://github.com/tienpham94/react-cool-spinners#readme"
+  "homepage": "https://github.com/tienpham94/react-cool-spinners#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.5",
+    "prettier-standard": "^9.1.1"
+  }
 }

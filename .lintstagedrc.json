@@ -1,0 +1,8 @@
+{
+  "linters": {
+    "src/**/*.js": [
+      "npm run format",
+      "git add"
+    ]
+  }
+}
