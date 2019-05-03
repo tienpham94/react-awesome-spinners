@@ -9,6 +9,7 @@
 
 Loading spinners for React, built with styled-components. [Demo](https://tienpham94.github.io/react-awesome-spinners)
 
+![react-awesome-spinners](https://user-images.githubusercontent.com/25751050/57149864-5f8c4280-6dd5-11e9-9347-a0b37dc50437.gif)
 
 
 ## Installation
