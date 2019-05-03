@@ -2,14 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-gqjmRU elsmdZ"
+  className="sc-bZQynM hkrGSj"
   color="#00bfff"
   size={64}
 >
-  <div />
-  <div />
-  <div />
-  <div />
   <div />
   <div />
   <div />

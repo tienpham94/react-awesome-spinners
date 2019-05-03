@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-htpNat euIIwo"
+  color="#00bfff"
+  height={64}
+  size={46}
+  width={64}
+/>
+`;

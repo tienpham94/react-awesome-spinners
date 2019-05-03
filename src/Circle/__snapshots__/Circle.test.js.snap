@@ -2,8 +2,12 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="lds-circle"
+  className="sc-bxivhb hsjImS"
 >
-  <div />
+  <div
+    className="sc-ifAKCX fFXEuW"
+    color="#00bfff"
+    size={50}
+  />
 </div>
 `;

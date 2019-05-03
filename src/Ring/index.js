@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 
 const motion = props => keyframes`
@@ -51,12 +50,6 @@ Ring.defaultProps = {
   size: 50,
   color: '#00bfff',
   sizeUnit: 'px'
-}
-
-Ring.propTypes = {
-  size: PropTypes.number,
-  color: PropTypes.string,
-  sizeUnit: PropTypes.string
 }
 
 export default Ring
