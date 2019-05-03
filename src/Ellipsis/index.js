@@ -2,23 +2,32 @@ import React from 'react'
 import styled, { keyframes } from 'styled-components'
 
 const motion1 = props => keyframes`
-   0% {
-    top: 28px;
-    left: 28px;
-    width: 0;
-    height: 0;
-    opacity: 1;
+  0% {
+    transform: scale(0);
   }
   100% {
-    top: -1px;
-    left: -1px;
-    width: 58px;
-    height: 58px;
-    opacity: 0;
+    transform: scale(1);
   }
 `
 
-const RippleSpinner = styled.div`
+const motion2 = props => keyframes`
+   0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+`
+const motion3 = props => keyframes`
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+`
+
+const EllipsisSpinner = styled.div`
   display: inline-block;
   position: relative;
   width: ${p => `${p.size}${p.sizeUnit}`};
@@ -26,28 +35,45 @@ const RippleSpinner = styled.div`
 
   div {
     position: absolute;
-    border: 4px solid ${p => p.color};
-    opacity: 1;
+    top: 27px;
+    width: 11px;
+    height: 11px;
     border-radius: 50%;
-    animation: ${p => motion1(p)} 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    background: ${p => p.color};
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
   }
 
+  div:nth-child(1) {
+    left: 6px;
+    animation: ${p => motion1(p)} 0.6s infinite;
+  }
   div:nth-child(2) {
-    animation-delay: -0.5s;
+    left: 6px;
+    animation: ${p => motion2(p)} 0.6s infinite;
+  }
+  div:nth-child(3) {
+    left: 26px;
+    animation: ${p => motion2(p)} 0.6s infinite;
+  }
+  div:nth-child(4) {
+    left: 45px;
+    animation: ${p => motion3(p)} 0.6s infinite;
   }
 `
 
-const Ripple = ({ color, size, sizeUnit }) => (
-  <RippleSpinner color={color} size={size} sizeUnit={sizeUnit}>
+const Ellipsis = ({ color, size, sizeUnit }) => (
+  <EllipsisSpinner color={color} size={size} sizeUnit={sizeUnit}>
     <div />
     <div />
-  </RippleSpinner>
+    <div />
+    <div />
+  </EllipsisSpinner>
 )
 
-Ripple.defaultProps = {
+Ellipsis.defaultProps = {
   size: 64,
   color: '#00bfff',
   sizeUnit: 'px'
 }
 
-export default Ripple
+export default Ellipsis

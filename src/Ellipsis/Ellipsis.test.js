@@ -1,8 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Default } from '..'
+import { Ellipsis } from '..'
 
 it('renders correctly', () => {
-  const tree = renderer.create(<Default />).toJSON()
+  const tree = renderer.create(<Ellipsis />).toJSON()
   expect(tree).toMatchSnapshot()
 })
