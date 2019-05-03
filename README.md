@@ -7,7 +7,9 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![MIT License](https://img.shields.io/npm/l/react-css-spinners.svg)](https://github.com/alex996/react-css-spinners/blob/master/LICENSE)
 
-Loading spinners for React, built with styled-components.
+Loading spinners for React, built with styled-components. [Demo](https://tienpham94.github.io/react-awesome-spinners)
+
+
 
 ## Installation
 
