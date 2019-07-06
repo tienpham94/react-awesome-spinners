@@ -62,6 +62,10 @@ color: '#00bfff',
 sizeUnit: 'px'
 ```
 
+## Peer dependencies
+- React (of course ⛵️)
+- styled-components
+
 ## Examples
 
 - [Create-React-App](./exampes/cra)
