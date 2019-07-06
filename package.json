@@ -13,6 +13,7 @@
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
     "format": "prettier-standard 'src/**/*.js'",
+    "pretest": "npm install styled-components --peer",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -74,7 +75,7 @@
   },
   "peerDependencies": {
     "react": ">=16.2",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.3.2"
   },
   "engines": {
     "node": ">=8"
@@ -83,5 +84,8 @@
     "moduleNameMapper": {
       "\\.css$": "<rootDir>/mocks/styles.js"
     }
+  },
+  "dependencies": {
+    "styled-components": "^4.3.2"
   }
 }

@@ -1,39 +1,39 @@
-import babel from "rollup-plugin-babel"
-import resolve from "rollup-plugin-node-resolve"
-import { terser } from "rollup-plugin-terser"
+import babel from 'rollup-plugin-babel'
+import resolve from 'rollup-plugin-node-resolve'
+import { terser } from 'rollup-plugin-terser'
 
-const dist = "dist"
-const bundle = "bundle"
+const dist = 'dist'
+const bundle = 'bundle'
 
 const production = !process.env.ROLLUP_WATCH
 
 const outputs = [
   {
     file: `${dist}/${bundle}.cjs.js`,
-    format: "cjs"
+    format: 'cjs'
   },
   {
     file: `${dist}/${bundle}.esm.js`,
-    format: "esm"
+    format: 'esm'
   },
   {
-    name: "ReactCssSpinners",
+    name: 'ReactCssSpinners',
     file: `${dist}/${bundle}.umd.js`,
     globals: {
-      react: "React",
-      "styled-components": "styled"
+      react: 'React',
+      'styled-components': 'styled'
     },
-    format: "umd"
+    format: 'umd'
   }
 ]
 
 const common = {
-  input: "src/index.js",
-  external: ["react", "styled-components"],
+  input: 'src/index.js',
+  external: ['react', 'styled-components'],
   plugins: [
     resolve(),
     babel({
-      exclude: "node_modules/**"
+      exclude: 'node_modules/**'
     }),
     production && terser()
   ]
