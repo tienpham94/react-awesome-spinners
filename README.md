@@ -7,7 +7,9 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![MIT License](https://img.shields.io/npm/l/react-css-spinners.svg)](https://github.com/tienpham94/react-awesome-spinners/blob/master/LICENSE)
 
-Loading spinners for React, built with styled-components. [Demo](https://tienpham94.github.io/react-awesome-spinners)
+Loading spinners for React, built with styled-components. 
+
+[Demo](https://tienpham94.github.io/react-awesome-spinners)
 
 ![react-awesome-spinners](https://user-images.githubusercontent.com/25751050/57149864-5f8c4280-6dd5-11e9-9347-a0b37dc50437.gif)
 
