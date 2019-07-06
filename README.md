@@ -5,7 +5,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/tienpham94/react-awesome-spinners/badge.svg?branch=master)](https://coveralls.io/github/tienpham94/react-awesome-spinners?branch=master)
 [![minified-size](https://img.shields.io/bundlephobia/min/react-awesome-spinners.svg)](https://bundlephobia.com/result?p=react-awesome-spinners@1.1.0)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![MIT License](https://img.shields.io/npm/l/react-css-spinners.svg)](https://github.com/alex996/react-css-spinners/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/npm/l/react-css-spinners.svg)](https://github.com/tienpham94/react-awesome-spinners/blob/master/licence)
 
 Loading spinners for React, built with styled-components. [Demo](https://tienpham94.github.io/react-awesome-spinners)
 
