@@ -70,5 +70,5 @@ sizeUnit: 'px'
 
 ## Examples
 
-- [Create-React-App](./exampes/cra)
-- [Server-Side Rendering](./exampes/ssr)
+- [Create-React-App](./examples/cra)
+- [Server-Side Rendering](./examples/ssr)
