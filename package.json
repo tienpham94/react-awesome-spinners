@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-spinners",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -13,7 +13,6 @@
     "build": "rollup -c",
     "lint": "eslint '**/*.js'",
     "format": "prettier-standard 'src/**/*.js'",
-    "pretest": "npm install styled-components --peer",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -71,7 +70,8 @@
     "rollup": "^1.16.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.0.4",
-    "rollup-plugin-terser": "^5.0.0"
+    "rollup-plugin-terser": "^5.0.0",
+    "styled-components": "^4.3.2"
   },
   "peerDependencies": {
     "react": ">=16.2",
@@ -84,8 +84,5 @@
     "moduleNameMapper": {
       "\\.css$": "<rootDir>/mocks/styles.js"
     }
-  },
-  "dependencies": {
-    "styled-components": "^4.3.2"
   }
 }
