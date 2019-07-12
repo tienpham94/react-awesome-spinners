@@ -9,7 +9,8 @@
   "dependencies": {
     "express": "latest",
     "react": "latest",
-    "react-awesome-spinners": "file:../..",
+    "react-awesome-spinners": "latest",
+    "styled-components": "latest",
     "react-dom": "latest"
   }
 }
