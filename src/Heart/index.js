@@ -51,11 +51,13 @@ const HeartSpinner = styled.div`
     background: ${p => p.color};
   }
   div:before {
-    left: -17px;
+    left: -26px;
+    width: ${p => `${p.size * 1.3}${p.sizeUnit}`};
     border-radius: 50% 0 0 50%;
   }
   div:after {
-    top: -17px;
+    top: -26px;
+    height: ${p => `${p.size * 1.3}${p.sizeUnit}`};
     border-radius: 50% 50% 0 0;
   }
 `
@@ -68,8 +70,6 @@ const Heart = ({ color, size, sizeUnit, width, height }) => (
     width={width}
     height={height}
   >
-    <div />
-    <div />
     <div />
   </HeartSpinner>
 )
